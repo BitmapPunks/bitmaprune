@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchfab Embed</title>
+    <style>
+        #sketchfab-iframe-container {
+            width: 50vw; /* Establece el ancho del contenedor al 50% del ancho de la ventana */
+            height: 50vw; /* Establece la altura del contenedor igual al ancho para que sea cuadrado */
+            overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+            position: relative; /* Añade una posición relativa al contenedor para alinear el iframe */
+        }
+
+        #sketchfab-iframe {
+            width: 100%; /* Establece el ancho del iframe al 100% del contenedor */
+            height: 100%; /* Establece la altura del iframe al 100% del contenedor */
+            position: absolute; /* Añade una posición absoluta al iframe para ajustarlo dentro del contenedor */
+            top: 0; /* Coloca el iframe en la parte superior del contenedor */
+            left: 0; /* Coloca el iframe en la parte izquierda del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <div id="sketchfab-iframe-container">
+        <iframe id="sketchfab-iframe" src="https://sketchfab.com/models/b78539a01fce41fea5d4ad1d1afd7b83/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
